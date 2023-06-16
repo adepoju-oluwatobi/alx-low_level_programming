@@ -1,8 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
-/* main - Determine if a number is positive, negative or zero */
-
-/* Return: Always 0 (success)*/
+/**
+ * Main -Determines if a number is positive, negative or zero
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	int n;
@@ -11,15 +13,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		prinf( n "%d is positive\n");
+		prinf("%d is positive\n", n);
 	} 
 	else if ( n == 0 )
 	{
-		printf( n "%d is zero\n");
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf( n "%d is negative\n");
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
