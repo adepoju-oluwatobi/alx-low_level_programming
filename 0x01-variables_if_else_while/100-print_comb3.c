@@ -5,24 +5,24 @@
  */
 int main(void)
 {
-        int n, m;
+	int n, m;
 
-        for (n = 1; n <= 10; n++)
-        {
-                for (m = 2; m <= 11; m++)
-                {
-                        if (m > n)
-                        {
-                                putchar(n);
-                                putchar(m);
-                                if (n != 10 || m != 11)
-                                {
-                                        putchar(',');
-                                        putchar(' ');
-                                }
-                        }
-                }
-        }
-        putchar('\n');
-        return (0);
+	for (n = 28; n <= 36; n++)
+	{
+		for (m = 29; m <= 37; m++)
+		{
+			if (m > n)
+			{
+				putchar(n);
+				putchar(m);
+				if (n != 28 || m != 29)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar("n");
+	return (0);
 }
