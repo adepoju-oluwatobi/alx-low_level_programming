@@ -13,17 +13,17 @@ int main(void)
                 {
 			for (o = 50; o <= 58; o++)
 			{
-                        if (o > m && m  > n)
-                        {
-                                putchar(n);
-                                putchar(m);
-				putchar(o);
-                                if (n != 56 || m != 57)
-                                {
-                                        putchar(',');
-                                        putchar(' ');
-                                }
-                        }
+			       	if (o > m && m  > n)
+                        	{
+                                	putchar(n);
+                                	putchar(m);
+					putchar(o);
+                                	if (n != 55 || m != 56)
+                                	{
+                                        	putchar(',');
+                                        	putchar(' ');
+                                	}
+                        	}
 			}
                 }
         }
