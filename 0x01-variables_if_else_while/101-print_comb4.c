@@ -5,28 +5,21 @@
  */
 int main(void)
 {
-        int n, m, o;
+        int a, b, c;
 
-        for (n = 48; n <= 58; n++)
-        {
-                for (m = 49; m <= 58; m++)
-                {
-			for (o = 50; o <= 58; o++)
+	for (a = 0; a <= 7; a++)
+	{
+		for (b = a + 1; b <= 8; b++)
+		{
+			for (c = b + 1; c <= 9; c++)
 			{
-			       	if (o > m && m  > n)
-                        	{
-                                	putchar(n);
-                                	putchar(m);
-					putchar(o);
-                                	if (n != 55 || m != 56)
-                                	{
-                                        	putchar(',');
-                                        	putchar(' ');
-                                	}
-                        	}
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(c + '0');
+				putchar(',');
+				putchar(' ');
 			}
-                }
-        }
-        putchar('\n');
-        return (0);
+		}
+	}
+	return (0);
 }
