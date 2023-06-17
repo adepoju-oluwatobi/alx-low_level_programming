@@ -5,22 +5,22 @@
  */
 int main(void)
 {
-	int a, b, c;
+	int i, j, k;
 
-	for (a = 0; a <= 7; a++)
+	for (i = 0; i <= 7; i++)
 	{
-		for (b = a + 1; b <= 8; b++)
+		for (j = i + 1; j <= 8; j++)
 		{
-			for (c = b + 1; c <= 9; c++)
+			for (k = j + 1; k <= 9; k++)
 			{
-				putchar(a + '0');
-				putchar(b + '0');
-				putchar(c + '0');
-			}
-			if (a != 7 || b != 8 || c != 9)
-			{
-				putchar(',');
-				putchar(' ');
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				if (i != 7 || j != 8 || k != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
