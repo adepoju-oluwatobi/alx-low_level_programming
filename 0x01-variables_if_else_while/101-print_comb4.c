@@ -16,7 +16,7 @@ int main(void)
 				putchar(a + '0');
 				putchar(b + '0');
 				putchar(c + '0');
-				if (a < b && b < c)
+				if (a != 3 || b != 4 || c != 5)
 				{
 				putchar(',');
 				putchar(' ');
