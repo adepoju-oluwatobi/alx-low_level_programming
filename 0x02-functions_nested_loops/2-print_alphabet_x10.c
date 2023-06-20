@@ -14,10 +14,10 @@ void print_alphabet_x10(void)
 		b = 0;
 		while (b < 26)
 		{
-			putchar(alph[b]);
+			_putchar(alph[b]);
 			b++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		a++;
 	}
 }
