@@ -10,7 +10,7 @@ int main(void)
 
 	for(a = 0; a < 8; a++)
 	{
-		putchar(letters[a]);
+		_putchar(letters[a]);
 	}
 	putchar('\n');
 	return (0);
