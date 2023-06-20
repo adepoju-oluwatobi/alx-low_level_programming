@@ -12,6 +12,7 @@ void print_alphabet_x10(void)
 	{
 		char alph[26] = "abcdefghijklmnopqrstuvwxyz";
 		b = 0;
+
 		while (b < 26)
 		{
 			_putchar(alph[b]);
