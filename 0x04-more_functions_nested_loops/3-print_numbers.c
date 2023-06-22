@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
  * print_numbers - print number from (0 to 9)
  * followed by a new line
  */
+
 void print_numbers(void)
 {
 	int a;
@@ -11,5 +13,6 @@ void print_numbers(void)
 	{
 		_putchar("%d", a);
 	}
+
 	_putchar('\n');
 }
