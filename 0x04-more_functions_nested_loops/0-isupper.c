@@ -2,7 +2,7 @@
 /**
  * main - check the code.
  * @c: character gotten from prototype.
- * Return: Always 0.
+ * Return: 1 if c is upercase and 0 otherwise.
  */
 int _isupper(int c)
 {
