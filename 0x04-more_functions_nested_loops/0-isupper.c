@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - check the code.
  * @c: character gotten from prototype.
