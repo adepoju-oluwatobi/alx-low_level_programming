@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * mul - Write a function that multiplies two integers
+ * @a: integer number
+ * @b: integer number
+ * Return: multiplication result
  */
 int mul(int a, int b)
 {
-	int multiply = a * b;
+	return(a * b);
 }
