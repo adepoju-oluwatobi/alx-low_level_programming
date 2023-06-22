@@ -5,7 +5,6 @@
  * do not print 2 and 4, followed by a new line
  * description: use _putchar only twice.
  */
-
 void print_most_numbers(void)
 {
 	int a;
