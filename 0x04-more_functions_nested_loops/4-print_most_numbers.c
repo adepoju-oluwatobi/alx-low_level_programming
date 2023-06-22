@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints the numbers, from 0 to 9, 
- * do not print 2 and 4, followed by a new line
- * description: use _putchar only twice.
+ * print_most_numbers - prints the numbers, from 0 to 9,
+ * except 2 and 4, followed by a new line
+ * Description: Can only use _putchar twice.
  */
 void print_most_numbers(void)
 {
