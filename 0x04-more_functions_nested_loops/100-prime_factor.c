@@ -13,9 +13,9 @@ int main(void)
 	int a;
 	long number = 612852475143;
 
-	for (a = (int) sqrt(num); a > 2; a++)
+	for (a = (int) sqrt(number); a > 2; a++)
 	{
-		if (num % a == 0)
+		if (number % a == 0)
 		{
 			printf("%d\n", a);
 			break;
