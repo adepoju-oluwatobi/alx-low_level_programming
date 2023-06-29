@@ -4,7 +4,7 @@
  * @c: string
  * Return: c
  */
-char *string_toupper(char *)
+char *string_toupper(char *c)
 {
 	int a = 0;
 
