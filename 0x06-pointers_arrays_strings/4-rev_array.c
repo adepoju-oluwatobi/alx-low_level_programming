@@ -15,7 +15,6 @@ void reverse_array(int *a, int n)
 		int temporal = a[start];
 		a[start] = a[end];
 		a[end] = temporal;
-
 		start++;
 		end--;
 	}
