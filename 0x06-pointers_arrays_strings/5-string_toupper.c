@@ -1,16 +1,16 @@
 #include "main.h"
 /**
  * string_toupper - lowercase letters of a string to uppercase.
- * @str: string
- * Return: str
+ * @c: string
+ * Return: c
  */
 char *string_toupper(char *)
 {
 	int a = 0;
 
-	while (str[a])
+	while (c[a])
 	{
-		str[a] = toupper(str[a]);
+		c[a] = toupper(c[a]);
 		a++;
 	}
 }
