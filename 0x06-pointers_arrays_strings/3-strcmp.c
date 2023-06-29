@@ -2,12 +2,12 @@
 
 /**
  * _strcmp - a function that compares two strings.
- * @dest: string varible to compare
- * @src: string variable to compare
+ * @s1: string varible to compare
+ * @s2: string variable to compare
  * Return: negative if s1<s2, 0 if matching, positive if s1 > s2
  */
 
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
 	int a;
 
