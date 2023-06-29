@@ -3,9 +3,8 @@
 /**
  * _strcmp - a function that compares two strings.
  * @dest: string varible to compare
- * @src: string variable to compre
- * @n: variable to copy compared strings to
- * Return: dest
+ * @src: string variable to compare
+ * Return: negative if s1<s2, 0 if matching, positive if s1 > s2
  */
 
 char *_strncpy(char *dest, char *src, int n)
