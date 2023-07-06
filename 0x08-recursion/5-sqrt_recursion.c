@@ -1,22 +1,40 @@
 #include "main.h"
-#include <math.h>
+
 /**
- * _sqrt_recursion - returns the natural square root of a n
- * @n: numeric variable
- * Return: -1 if `n` do not have a natural square root
+ * _sqrt_recursion - return the natural square root of a number
+ * @n: int number
+ * Return: If no natural square root, return -1. Else return natural
+ * square root
  */
+
 int _sqrt_recursion(int n)
 {
-	int sqr_root;
+	int sqrt_fun(int n, int sq);
 
-	if (n % 2 != 0)
+	int sq = 1;
+
+	return (sqrt_fun(n, sq));
+}
+
+/**
+ * sqrt_fun - helper function to solve _sqrt_recursion
+ * @sq: number to determine if square root
+ * @n:  int number
+ * Return: square root if natural square root, or -1 if none found
+ */
+
+int sqrt_fun(int n, int sq)
+{
+	if (n == sq * sq)
 	{
-		return (-1);
+		return (sq);
+	}
+	else if (sq < n)
+	{
+		return (sqrt_fun(n, ++sq));
 	}
 	else
 	{
-		sqr_root = sqrt(n);
-		_sqrt_recursion(sqr_root);
-		return (sqr_root);
+		return (-1);
 	}
 }
