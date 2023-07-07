@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 			printf("0\n");
 			return (0);
 		}
-		else if (argv[i] == '\0')
+		else if (argv[i] < '0' || argv[i] > '9')
 		{
 			printf("Error\n");
 			return (1);
