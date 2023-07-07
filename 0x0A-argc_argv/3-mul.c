@@ -6,7 +6,7 @@
  * @argv: arrays of argument passed
  * Return: 1 if argc is not equals to 2
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int a, b, mul;
 
