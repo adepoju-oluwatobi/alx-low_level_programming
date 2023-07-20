@@ -7,7 +7,6 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	/* init va_list to store the values from function variable */
 	va_list x;
 	unsigned int i;
 
