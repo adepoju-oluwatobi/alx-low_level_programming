@@ -9,11 +9,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	/* init va_list to store the values from function variable */
 	va_list x;
-	unsigned int i; /* int var for loop */
+	unsigned int i;
 
-	va_start (x, n); /* passing the values of n to x */
+	va_start (x, n);
 
-	for (i = 0; i < n; i++) /* loop to print the args */
+	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(x, unsigned int));
 		if (i < (n - 1) && separator != NULL)
