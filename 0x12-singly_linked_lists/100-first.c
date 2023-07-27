@@ -1,4 +1,4 @@
-#include "lists.h"
+#include <stdio.h>
 /**
  * print_first - a function that prints some strings to stdout
  * Return: success
