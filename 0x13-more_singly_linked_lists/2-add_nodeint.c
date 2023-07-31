@@ -3,11 +3,13 @@
  * add_nodeint - a function that adds a new node at the beginning of a listint_t list.
  * @head: head of node
  * @n: integer data
+ * Return: address of the newly added node
  */
 listint_t *add_nodeint(listint_t **head, const int n);
 {
-	listint_t *begin_node = malloc(sizeof(listint_t));
+	listint_t *begin_node;
 
+	begin_node = malloc(sizeof(listint_t));
 	if (begin_node != NULL)
 	{
 		begin_node->n = n;
