@@ -12,8 +12,7 @@ void free_listint2(listint_t **head)
 	return;
 
 	node_head = *head;
-	*head = *head->next
-	head = NULL;
-
+	*head = *head->next;
 	free(new_ptr);
+	head = NULL;
 }
