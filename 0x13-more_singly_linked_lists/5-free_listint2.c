@@ -11,11 +11,8 @@ void free_listint2(listint_t **head)
 	if (head == NULL)
 	return;
 
-	while (*head)
-	{
-		node_head = *head;
-		*head = *head->next;
-		free(new_ptr);
-	}
+	node_head = *head;
+	*head = (*head)->next;
+	free(new_ptr);
 	head = NULL;
 }
