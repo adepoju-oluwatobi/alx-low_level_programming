@@ -6,12 +6,32 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	listint_t *new;
+	size_t count = 0;
+	listint_t *ptr, *new, *add;
 
-	if(new)
+	ptr = NULL;
+	while (head != NULL)
 	{
-		new->head = head;
-		new->next = NULL;
-	}
-	return new;
+		new = malloc(sizeof(listint_t));
+
+		if (new == NULL)
+			exit(98);
+
+		new->n = (void *)head;
+		new->next = ptr;
+		ptr = new;
+
+		add = ptr;
+
+		while (add->next !- NULL)
+		{
+			add = add->next;
+			if (head == add->n)
+			{
+				printf("-[%p]%d\n", (void *)head, head->n;
+				free(count);
+			}
+		}
+		free(ptr);
+		return(count);
 }
