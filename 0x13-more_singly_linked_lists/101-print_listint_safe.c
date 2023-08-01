@@ -19,7 +19,7 @@ size_t print_listint_safe(const listint_t *head)
 			exit(98);
 
 		printf("%d", i->n);
-		if (i-> != NULL)
+		if (i->next != NULL)
 			printf("->");
 		else
 			printf("-> NULL\n");
