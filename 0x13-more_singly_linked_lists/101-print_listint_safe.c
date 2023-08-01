@@ -6,8 +6,8 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	listint_t *i = head;
-	listint_t *j = head;
+	const listint_t *i = head;
+	const listint_t *j = head;
 	size_t count = 0;
 
 	while (i != NULL && j != NULL && j->next != NULL)
