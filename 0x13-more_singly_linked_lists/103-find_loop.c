@@ -7,7 +7,7 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	if (head == NULL || head-> == NULL)
+	if (head == NULL || head->next == NULL)
 		return NULL;
 
 	listint_t *i = head;
