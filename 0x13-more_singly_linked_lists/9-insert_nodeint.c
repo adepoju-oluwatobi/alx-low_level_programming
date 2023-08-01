@@ -21,8 +21,8 @@ new_node->n = n;
 if (idx == 0)
 {
 new_node->next = temp;
-*head = new;
-return (new);
+*head = new_node;
+return (new_node);
 }
 
 for (node = 0; node < (idx - 1); node++)
