@@ -7,6 +7,7 @@
 listint_t *reverse_listint(listint_t **head)
 {
 	typedef listint_t node;
+
 	node *container_one;
 	node *container_two;
 
