@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * struct new_node- singly linked list
  * @p: ptr to nodes
