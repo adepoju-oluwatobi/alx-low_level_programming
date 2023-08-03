@@ -21,7 +21,7 @@ void print_binary(unsigned long int n)
 			stat = 1;
 			_putchar('1');
 		}
-		else if (state == 1 || divisor == 1)
+		else if (stat == 1 || divisor == 1)
 		{
 			_putchar('0');
 		}
@@ -40,7 +40,7 @@ unsigned long int _exp(unsigned int base, unsigned int exp)
 	unsigned int i;
 
 	number = 1;
-	for (i = 1; i <= power; i++)
+	for (i = 1; i <= exp; i++)
 		number *= base;
 	return (number);
 }
