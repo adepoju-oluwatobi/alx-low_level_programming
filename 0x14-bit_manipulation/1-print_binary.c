@@ -33,6 +33,7 @@ void print_binary(unsigned long int n)
  * @base: base number
  * @exp: exponent
  * Return: number
+ * Description: this function finds the exponential vale
  */
 unsigned long int _exp(unsigned int base, unsigned int exp)
 {
