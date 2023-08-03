@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <math.h>
 #include "raise_to_power.c"
-#include "0-binary_to_uint.c"
 
 int raise_to_power(int base, int exponent);
 unsigned int binary_to_uint(const char *b);

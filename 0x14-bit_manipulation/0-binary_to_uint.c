@@ -7,20 +7,20 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int loop;
+	int i;
 	unsigned int number = 0;
 
 	if (!b)
 		return (0);
-	for (loop = 0; b[loop] != '\0'; loop++)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[loop] != '0' && b[loop] != '1')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
 	}
-	for (loop = 0; b[loop] != '\0'; loop++)
+	for (i = 0; b[i] != '\0'; i++)
 	{
 		number <<= 1;
-		if (b[loop] == '1')
+		if (b[i] == '1')
 			number += 1;
 	}
 	return (number);
