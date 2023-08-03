@@ -4,8 +4,6 @@
  * @n: decimal number to convert
  * Return: Nothing
  */
-unsigned long int _exp(unsigned int base, unsigned int exp);
-
 void print_binary(unsigned long int n)
 {
 	unsigned long int divisor, check;
