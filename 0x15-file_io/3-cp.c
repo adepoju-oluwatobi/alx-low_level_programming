@@ -30,14 +30,14 @@ int main(int argc, char *argv[])
 
 	while ((bytes_read = read(fp_from, buf, BUFFER_SIZE)) > 0)
 	{
-		if (bytes_read == -1)
-                print_err("Error: Can't read from file", 98);
-
 		bytes_written = write(fp_to, buf, bytes_read);
 
 		if (bytes_written == -1)
 			print_err("Error: Can't write to file", 99);
 	}
+	if (bytes_read == -1)
+                print_err("Error: Can't read from file", 98);
+
 	if (close(fp_from) == -1)
 		print_err("Error: Can't close fd", 100);
 
