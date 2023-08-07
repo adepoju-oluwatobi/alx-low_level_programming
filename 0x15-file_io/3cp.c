@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* file_err - checks if files can be opened
-* @file_from: first argv
-* @file_to: second argv
-* @argv: arguments values
-* Return: nothing
+* error_file - checks if files can be opened
+* @file_from: file from
+* @file_to: file to
+* @argv: arguments vector
+* Return: 0
 */
 
-void file_err(int file_from, int file_to, char *argv[])
+void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{
@@ -23,16 +23,16 @@ void file_err(int file_from, int file_to, char *argv[])
 }
 
 /**
-* main - a program that copies the content of a file to another file.
+* main - check the code for Holberton School students
 * @argc: argument count
-* @argv: arguments value
+* @argv: arguments vector
 * Return: 0
 */
 
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
-	ssize_t bytes_read, bytes_written;
+	ssize_t nchars, nwr;
 	char buf[1024];
 
 	if (argc != 3)
@@ -42,17 +42,17 @@ int main(int argc, char *argv[])
 	}
 	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	file_err(file_from, file_to, argv);
-	bytes_read = 1024;
+	error_file(file_from, file_to, argv);
+	nchars = 1024;
 
-	while (bytes_read == 1024)
+	while (nchars == 1024)
 	{
-		bytes_read = read(file_from, buf, 1024);
-		if (bytes_read == -1)
-			file_err(-1, 0, argv);
-		bytes_written = write(file_to, buf, bytes_read);
-		if (bytes_written == -1)
-			file_err(0, -1, argv);
+		nchars = read(file_from, buf, 1024);
+		if (nchars == -1)
+			error_file(-1, 0, argv);
+		nwr = write(file_to, buf, nchars);
+		if (nwr == -1)
+			error_file(0, -1, argv);
 	}
 	err_close = close(file_from);
 	if (err_close == -1)
