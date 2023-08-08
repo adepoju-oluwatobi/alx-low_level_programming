@@ -7,11 +7,10 @@
 
 void check_IO_status(int status, int fd, char *filename, char perm);
 /**
- * main - copies the content of one file to the other
+ * main - copies the content of one files
  * @argc: argument count
- * @argv: arguments passed
- *
- * Return: 1 on success, exit otherwise
+ * @argv: argumentvalue
+ * Return: 0 on success, exit otherwise
  */
 int main(int argc, char *argv[])
 {
@@ -45,12 +44,11 @@ int main(int argc, char *argv[])
 }
 
 /**
- * check_IO_status - checks if a file can be opened or closed
- * @status: file descriptor of the file to be opened
+ * check_IO_status - checks file status
+ * @status: fd of the file to be opened
  * @filename: name of the file
  * @perm: closing or opening
  * @fd: file descriptor
- *
  * Return: void
  */
 void check_IO_status(int status, int fd, char *filename, char perm)
