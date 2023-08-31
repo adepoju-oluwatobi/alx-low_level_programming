@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * flip_bits - Write a function that returns the number of bits you would need to flip
+ * flip_bits - this function returns the number of bits you would need to flip
  * @n: bits
  * @m: bots to flip
  * Return: number of bits to flip
