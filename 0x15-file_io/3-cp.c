@@ -14,7 +14,8 @@ void check_IO_status(int status, int fd, char *filename, char perm);
  */
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, bytes_read = 1024, bytes_written, close_file_from, close_file_to;
+	int file_from, file_to, bytes_read = 1024;
+	int bytes_written, close_file_from, close_file_to;
 	unsigned int perm = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	char buffer[1024];
 
